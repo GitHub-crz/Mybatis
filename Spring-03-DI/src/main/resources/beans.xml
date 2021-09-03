@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean name="address" class="address">
+        <property name="privince" value="安徽"/>
+        <property name="city" value="合肥"/>
+    </bean>
+    <bean id="student1" class="Student">
+        <property name="name" value="蔡镕洲"/>
+        <property name="addr" ref="address"/>
+        <property name="books">
+            <array>
+                <value>Java</value>
+                <value>Spring</value>
+                <value>Mybatis</value>
+            </array>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="id" value="E01814016"/>
+                <entry key="学院" value="计算机科学与技术"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>原神</value>
+                <value>绣湖</value>
+            </set>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="宿舍号">2501</prop>
+                <prop key="学院">计科</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

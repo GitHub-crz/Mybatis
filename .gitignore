@@ -1,0 +1,9 @@
+# Project exclude paths
+/algorithm/target/
+/JUC-01/target/
+/mybatis-01/target/
+/mybatis-02/target/
+/Spring-01/target/
+/Spring-02/target/
+/Spring-03-DI/target/
+/Thread/target/

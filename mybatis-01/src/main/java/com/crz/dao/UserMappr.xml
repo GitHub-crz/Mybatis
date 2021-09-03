@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.crz.dao.UserMappr">
+
+    <select id="getUserList" resultType="com.crz.poji.User">
+        select * from mybatis.user;
+    </select>
+
+    <select id="getUserByid" resultType="com.crz.poji.User" parameterType="int">
+        select * from mybatis.user where id=#{id};
+    </select>
+
+    <insert id="addUser" parameterType="com.crz.poji.User">
+        insert into mybatis.user(id,name,pwd) value(#{id},#{name},#{pwd});
+    </insert>
+
+    <update id="updataUser" parameterType="com.crz.poji.User">
+        update mybatis.user
+            set name=#{name},pwd=#{pwd}
+        where id=#{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete
+        from mybatis.user
+                 where id=#{id};
+    </delete>
+
+    <update id="updatapwd" parameterType="Map">
+        update mybatis.user set pwd=#{pwd} where id=#{id};
+    </update>
+
+    <select id="getpartAttributes" parameterType="String" resultType="Map">
+        select `name`,`pwd` from mybatis.user where pwd=#{pwd};
+    </select>
+
+</mapper>
