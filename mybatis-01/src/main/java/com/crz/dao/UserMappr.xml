@@ -6,7 +6,7 @@
 <mapper namespace="com.crz.dao.UserMappr">
 
     <select id="getUserList" resultType="com.crz.poji.User">
-        select * from mybatis.user;
+        select * from Mybatis.user;
     </select>
 
     <select id="getUserByid" resultType="com.crz.poji.User" parameterType="int">

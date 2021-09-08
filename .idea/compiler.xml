@@ -7,12 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-02" />
+        <module name="Spring-08-proxy" />
         <module name="Spring-04-Autowired" />
         <module name="Spring-01" />
         <module name="JUC-01" />
         <module name="Spring-02" />
         <module name="mybatis-01" />
         <module name="Spring-03-DI" />
+        <module name="Spring-09-aop" />
+        <module name="mybatis-03-test" />
         <module name="Thread" />
         <module name="algorithm" />
       </profile>
