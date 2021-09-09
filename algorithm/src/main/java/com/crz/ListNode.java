@@ -6,12 +6,12 @@ public class ListNode {
     ListNode() {}
     ListNode(int val) { this.val = val; }
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    ListNode GetList(){
-        ListNode F=new ListNode(17);
-        ListNode E=new ListNode(15,F);
-        ListNode D=new ListNode(11,E);
-        ListNode C=new ListNode(10,D);
-        ListNode B=new ListNode(5,C);
+    static ListNode GetList(){
+        ListNode F=new ListNode(6);
+        ListNode E=new ListNode(5,F);
+        ListNode D=new ListNode(4,E);
+        ListNode C=new ListNode(3,D);
+        ListNode B=new ListNode(2,C);
         ListNode A=new ListNode(1,B);
         return A;
     }

@@ -9,9 +9,11 @@ public class Leetcode15 {
     static int all=0;
     static List<int[]> L=new LinkedList<>();
     public static void main(String[] args) {
-        sss s=new sss();
-        s.threeSum(new int[]{-1,0,1,2,-1,-2});
-        System.out.println(s.L.toString());
+        //sss s=new sss();
+        //s.threeSum(new int[]{-1,0,1,2,-1,-2});
+        //System.out.println(s.L.toString());
+        ReCode r=new ReCode();
+        r.threeSum(new int[]{-1,0,1,2,-1,-2});
 
     }
 }
@@ -21,8 +23,8 @@ public class Leetcode15 {
          List<List<Integer>> L=new LinkedList<>();
          S(nums,-999999999,-999999999);
          //System.out.println(L.toString());
-         Arrays.sort(nums);
-         System.out.println(Arrays.toString(nums));
+         //Arrays.sort(nums);
+         //System.out.println(Arrays.toString(nums));
         return L;
      }
     public void S(int[] num,int i1,int i2){
@@ -39,9 +41,9 @@ public class Leetcode15 {
                         l.add(num[i1]);
                         l.add(num[i2]);
                         l.add(num[i]);
-                        System.out.println(l.toString());
+                        //System.out.println(l.toString());
                         if(!exist(l)){
-                            //System.out.println(l.toString());
+                            System.out.println(l.toString());
                             L.add(l);
                         }
 
@@ -105,6 +107,7 @@ public class Leetcode15 {
 
              }
          }
+         System.out.println(lists.toString());
          return lists;
      }
 }
