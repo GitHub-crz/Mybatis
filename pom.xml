@@ -21,6 +21,9 @@
       <module>Spring-09-aop</module>
     <module>mybatis-03-test</module>
       <module>Spring-08-proxy</module>
+    <module>javaweb-01-servlet</module>
+      <module>java-02-download</module>
+    <module>javaweb-03-VerificationCode</module>
   </modules>
 
   <name>Mybatis</name>
@@ -77,6 +80,15 @@
       <artifactId>spring-jdbc</artifactId>
       <version>5.3.9</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
 
   </dependencies>
 
